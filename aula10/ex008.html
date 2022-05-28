@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando JS</title>
+    <style>
+            
+        body{
+            background-image: linear-gradient(to right , #00fa857c , #00fa8528);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1em;
+        }
+
+        main {
+            background-color: white;
+            width: 800px;
+            height: 700px;
+            margin: auto;
+            border-radius: 10px;
+
+        }
+
+        h1{
+            text-align: center;
+
+        }
+        p{
+            font-weight: bold;
+
+        }
+        input{
+            width: 80px;
+            margin-right: 20px;
+            border-radius: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.329) ;       
+        }
+
+        input#botao{
+            width: 200px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <main>
+            <h1>Testando Multiplicação com JavaScript</h1>
+
+            <input type="number" name="txtn1" id="txtn1"> 
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Clique para Multiplicar" id="botao"  onclick="somar()">           
+            <div>
+                <p>Resultado: <span id="res">__</span> </p> 
+            </div>
+
+    </main>
+
+
+
+
+    <script>
+        function somar () {
+            var tn1 = window.document.querySelector('input#txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.querySelector('span#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a ${s} `
+        }
+            var a = window.document.querySelector('input#botao')
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseleave', sair)
+
+            function clicar(){
+                a.style.background = 'green'
+            }
+
+            function entrar(){
+                a.style.background = '#00fa857c'
+            }
+
+            function sair(){
+                a.style.background = 'white'
+            }
+    </script>
+
+</body>
+</html>

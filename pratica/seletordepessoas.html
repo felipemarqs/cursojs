@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sleetor de pessoas</title>
+</head>
+<body>
+    <header>
+        <h1>Seletor de Pessoas</h1>
+    </header>
+
+    <main>
+
+       
+        <div id="divsex">
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="radsex">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="radsex">Feminino</label>
+            </p>
+        </div>
+
+        <div>
+            <span id="digite">Digite sua idade: </span><input type="number" name="idade" id="idade">
+        </div>
+
+
+        <div>
+            <p>Qual a cor do seu cabelo?
+                <input type="radio" name="radcabelo" id="castanho" checked>
+                <label for="castanho">Castanho</label>
+
+                <input type="radio" name="radcabelo" id="preto" checked>
+                <label for="preto">Preto</label>
+
+                <input type="radio" name="radcabelo" id="loiro" checked>
+                <label for="loiro">Loiro</label>
+
+                <input type="radio" name="radcabelo" id="ruivo" checked>
+                <label for="ruivo">ruivo</label>
+            
+            </p>
+        </div>
+
+            <p>
+                <input id="check" type="button" value="Verificar" onclick="verificar()"> <input id="continuar" type="button" value="continuar?" onclick="continuar()">
+            </p>
+
+            
+
+
+            <script src="scrpit.js"></script>
+
+            <div id="res">
+                teste
+            </div>
+
+    </main>
+    
+
+
+</body>
+</html>
